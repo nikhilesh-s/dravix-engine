@@ -1,11 +1,13 @@
+<p align="center">
+  <img src="docs/hero.png" alt="Dravix website" width="100%">
+</p>
+
 # Dravix — Materials Fire-Risk Screening Engine
 
 Early-stage machine-learning screening system for prioritizing candidate materials before physical fire testing.
 
 ![Python 3.11](https://img.shields.io/badge/Python-3.11-3776AB?logo=python&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-inference%20service-009688?logo=fastapi&logoColor=white)
-![License](https://img.shields.io/badge/License-TBD-lightgrey)
-![GitHub Repo stars](https://img.shields.io/github/stars/nikhilesh-s/mfr-material-risk-engine?style=social)
 
 ## System Overview
 
@@ -23,8 +25,11 @@ https://mfr-material-risk-engine.onrender.com/docs
 Interactive Demo  
 https://dravix-engine.materiamse.com
 
+Product site  
+https://dravix.materiamse.com ([nikhilesh-s/dravix-website](https://github.com/nikhilesh-s/dravix-website))
+
 Repository  
-https://github.com/nikhilesh-s/mfr-material-risk-engine
+https://github.com/nikhilesh-s/dravix-engine
 
 ## System Architecture
 
@@ -124,8 +129,8 @@ Directory roles:
 Dravix currently runs as a FastAPI service from the repository root.
 
 ```bash
-git clone https://github.com/nikhilesh-s/mfr-material-risk-engine.git
-cd mfr-material-risk-engine
+git clone https://github.com/nikhilesh-s/dravix-engine.git
+cd dravix-engine
 
 python3.11 -m venv .venv
 source .venv/bin/activate
@@ -135,6 +140,16 @@ uvicorn api.main:app --reload
 ```
 
 The local API will then be available at `http://127.0.0.1:8000`, with interactive docs at `http://127.0.0.1:8000/docs`.
+
+The demo UI is a Vite + React app in `frontend/`:
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+It calls the hosted API by default. To point it at a local backend, set `VITE_API_BASE_URL=http://127.0.0.1:8000` in `frontend/.env.local`.
 
 ## Backend Validation
 
