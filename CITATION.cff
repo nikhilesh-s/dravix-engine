@@ -1,0 +1,46 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the Dravix software record and, for data, the benchmark dataset record."
+type: software
+title: "Dravix engine: materials fire-risk screening API and demo interface"
+repository-code: "https://github.com/nikhilesh-s/dravix-engine"
+url: "https://dravix-engine.materiamse.com"
+license: "Apache-2.0"
+authors:
+  - family-names: "Suravarjjala"
+    given-names: "Nikhilesh"
+    orcid: "https://orcid.org/0009-0004-7227-2213"
+  - family-names: "Saini"
+    given-names: "Arnav"
+    orcid: "https://orcid.org/0009-0007-7209-1545"
+keywords:
+  - fire safety
+  - cone calorimeter
+  - materials science
+  - machine learning
+abstract: >-
+  FastAPI service and web demo that return a relative fire-risk screening signal for candidate
+  materials before physical testing. A screening aid, not for certification. The benchmarked
+  Dravix models and protocol are in the release-dravix repository.
+references:
+  - type: software
+    title: "Dravix: formulation-to-cone-calorimeter property models and benchmark code"
+    version: "2.0.0"
+    doi: "10.5281/zenodo.23653502"
+    year: 2026
+    authors:
+      - family-names: "Suravarjjala"
+        given-names: "Nikhilesh"
+      - family-names: "Saini"
+        given-names: "Arnav"
+  - type: data
+    title: "Dravix cone-calorimeter literature benchmark"
+    version: "v1"
+    doi: "10.5281/zenodo.23654307"
+    year: 2026
+    publisher:
+      name: "Zenodo"
+    authors:
+      - family-names: "Suravarjjala"
+        given-names: "Nikhilesh"
+      - family-names: "Saini"
+        given-names: "Arnav"
